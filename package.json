@@ -10,7 +10,7 @@
 		"url": "https://github.com/s4tori/jshint-smart"
 	},
 	"engines": {
-		"node": ">=0.9"
+		"node": ">=0.10.0"
 	},
 	"scripts": {
 		"test": "grunt mochaTest:all && gulp test.all",
