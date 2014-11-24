@@ -1,0 +1,50 @@
+{
+	"name": "jshint-smart",
+	"version": "0.1.0",
+	"description": "Responsive reporter for JSHint",
+	"author": "Romain N.",
+	"homepage": "https://github.com/s4tori/jshint-smart",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/s4tori/jshint-smart"
+	},
+	"engines": {
+		"node": ">=0.9"
+	},
+	"scripts": {
+		"test": "grunt mochaTest:all && gulp test.all",
+		"jh"  : "jshint --reporter=lib/jshint-smart.js demo/",
+		"jhv" : "jshint --reporter=lib/jshint-smart.js demo/ --verbose"
+	},
+	"main" : "./lib/index.js",
+	"files": [
+		"lib/",
+		"LICENSE-MIT"
+	],
+	"directories": {
+		"lib": "./lib"
+	},
+	"keywords": [
+		"jshint",
+		"reporter",
+		"lint",
+		"formatting",
+		"validate",
+		"table",
+		"smart"
+	],
+	"dependencies": {
+		"supports-color": "^1.2.0"
+	},
+	"devDependencies": {
+		"jshint": "^2",
+		"hooker": "^0.2.3",
+		"gulp": "^3.8.10",
+		"gulp-mocha": "^2.0.0",
+		"gulp-jshint": "^1.9.0",
+		"grunt": "^0.4.5",
+		"grunt-mocha-test": "^0.12.4",
+		"grunt-contrib-jshint": "^0.10.0"
+	}
+}

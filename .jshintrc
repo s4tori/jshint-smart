@@ -1,0 +1,29 @@
+{
+	// ---------------------------------------
+	// Globals
+	"globals": {
+
+	},
+
+	// ---------------------------------------
+	// Enforcing options
+	"eqeqeq": true,
+	"undef": true,
+	"freeze": true,
+	"immed": true,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"undef": true,
+	"unused": true,
+	"strict": true,
+
+	// ---------------------------------------
+	// Relaxing options
+	"expr": true,
+	"sub": true,
+
+	// ---------------------------------------
+	// Environments
+	"node": true
+}
