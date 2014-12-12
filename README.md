@@ -20,7 +20,7 @@ The column "Evidence"  will be displayed only if there is enough space.
 ## Install
 
 ```bash
-$ npm install --save-dev jshintrp
+$ npm install --save-dev jshint-smart
 ```
 
 
