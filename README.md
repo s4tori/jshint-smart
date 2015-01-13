@@ -47,9 +47,10 @@ grunt.registerTask("default", ["jshint"]);
 
 ```js
 gulp.task("jshint", function () {
-	gulp.src(["file.js"])
-		.pipe(jshint(".jshintrc"))
-		.pipe(jshint.reporter("jshint-smart"), { verbose: false }); // if true : show warning code
+	return gulp.src(["file.js"])
+		.pipe(jshint())
+		.pipe(jshint.reporter("jshint-smart", { verbose: false })) // if true  : show warning code
+		.pipe(jshint.reporter("fail"));                            // optional : fail when a JSHint error happens
 });
 
 gulp.task("default", ["jshint"]);
