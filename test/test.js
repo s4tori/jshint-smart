@@ -38,7 +38,7 @@ describe("jshint-smart", function () {
 		hooker.unhook(process.stdout, "write");
 
 		if (win32) {
-			output = output.replace(symbols.right, symbols.right + "\n");
+			output = output.replace(new RegExp(symbols.right, "g"), symbols.right + "\n");
 		}
 
 		return output;
