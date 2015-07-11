@@ -5,8 +5,8 @@
 
 var myObject = function () {
 	// E007: Missing "use strict" statement.
-	// W003: 'foo' was used before it was defined.
 	// W018: Confusing use of '!'.
+	// W003: 'foo' was used before it was defined.
 	if (foo === !!crab) {
 		var foo = "crab";
 	}
@@ -33,5 +33,8 @@ var myObject = new myObject;
 // W054: The Function constructor is a form of eval.
 new Function("h2", "g2", 42);
 
+// W003: 'crab' was used before it was defined.
 // W057: "Weird construction. Is 'new' necessary?"
+// E007: Missing "use strict" statement.
+// W033: Missing semicolon.
 var crab = new function () { 0+0 } ();

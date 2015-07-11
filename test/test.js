@@ -69,12 +69,12 @@ describe("jshint-smart", function () {
 		assert.equal(output.split("\n")[1], "\x1b[0m\x1b[35m " + symbols.down + " " + files[0] + "\x1b[0m");
 	});
 
-	it("should return all errors (fixture A : 16 errors)", function () {
+	it("should return all errors (fixture A : 14 errors)", function () {
 		var files          = [fixture.A];
 		var output         = runJshint(files, false);
 		var startBodyTable = 4;
 		var endBodyTable   = output.split("\n").indexOf("", startBodyTable) - startBodyTable;
-		assert.equal(endBodyTable, 16);
+		assert.equal(endBodyTable, 14);
 	});
 
 	it("should return all errors (fixture B : 14 errors)", function () {

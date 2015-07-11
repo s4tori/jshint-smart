@@ -6,11 +6,13 @@
 // W117: 'foo' is not defined.
 foo = "bar";
 
+// W098: 'foobar' is defined but never used.
 // W068: Wrapping non-IIFE function literals in parens is unnecessary.
 var foobar = (function () {
 	// W104: "'const' is available in ES6 <...>"
+	// E007: Missing "use strict" statement.
 	const myConst = "h2g2";
-	// E011: const 'a' has already been declared.
+	// W104: "'const' is available in ES6 <...>"
 	const myConst = "42";
 
 	// W051: Variables should not be deleted.
@@ -19,8 +21,7 @@ var foobar = (function () {
 	// W017: Bad operand.
 	for (var i = 0, len = 5; i < len; ++i++) {
 
-		// W099: Mixed spaces and tabs.
-			 noop();
+		noop();
 
 		// W083: Don't make functions within a loop.
 		// W003: 'noop' was used before it was defined.
