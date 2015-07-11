@@ -40,11 +40,17 @@
 	"devDependencies": {
 		"jshint": "^2",
 		"hooker": "^0.2.0",
+
 		"gulp": "^3.9.0",
 		"gulp-mocha": "^2.1.0",
 		"gulp-jshint": "^1.11.0",
+		
 		"grunt": "^0.4.5",
 		"grunt-mocha-test": "^0.12.0",
-		"grunt-contrib-jshint": "^0.11.0"
+		"grunt-contrib-jshint": "^0.11.0",
+
+		"brunch": "^1.8.0",
+		"javascript-brunch": "^1.7.0",
+		"jshint-brunch": "^1.8.0"
 	}
 }

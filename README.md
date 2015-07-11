@@ -56,6 +56,21 @@ gulp.task("jshint", function () {
 gulp.task("default", ["jshint"]);
 ```
 
+### [jshint-brunch](https://github.com/brunch/jshint-brunch)
+
+```js
+exports.config = {
+	files: { },
+	plugins: {
+		jshint: {
+			pattern: /^app(\/|\\).*\.js$/,
+			reporter: "jshint-smart"
+		}
+	}
+};
+```
+
+
 ### [JSHint CLI](https://github.com/jshint/jshint/)
 
 ```
