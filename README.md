@@ -1,4 +1,8 @@
-# jshint-smart [![Build Status](https://travis-ci.org/s4tori/jshint-smart.svg?branch=master)](https://travis-ci.org/s4tori/jshint-smart)
+# jshint-smart
+
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
 
 > Responsive reporter for [JSHint](https://github.com/jshint/jshint)
 
@@ -13,8 +17,8 @@ On Windows :
 
 ![screenshot](demo/windows-verbose.png)
 
-The column "Code" will be displayed only if you run JSHint with a flag --verbose.<br />
-The column "Evidence"  will be displayed only if there is enough space.
+The column **Code** will be displayed only if you run JSHint with a flag `--verbose`.<br />
+The column **Evidence**  will be displayed only if there is enough space.
 
 
 ## Install
@@ -76,3 +80,11 @@ exports.config = {
 ```
 jshint file.js --reporter=./node_modules/jshint-smart/lib/jshint-smart.js
 ```
+
+
+[npm-image]:    https://img.shields.io/npm/v/jshint-smart.svg?style=flat-square
+[npm-url]:      https://npmjs.org/package/jshint-smart
+[travis-image]: https://img.shields.io/travis/s4tori/jshint-smart.svg?style=flat
+[travis-url]:   https://travis-ci.org/s4tori/jshint-smart
+[david-image]:  http://img.shields.io/david/s4tori/jshint-smart.svg?style=flat-square
+[david-url]:    https://david-dm.org/s4tori/jshint-smart
