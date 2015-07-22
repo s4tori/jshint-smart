@@ -17,8 +17,8 @@ On Windows :
 
 ![screenshot](demo/windows-verbose.png)
 
-The column **Code** will be displayed only if you run JSHint with a flag `--verbose`.<br />
-The column **Evidence**  will be displayed only if there is enough space.
+The column "Code" will be displayed only if you run JSHint with a flag `--verbose`.<br />
+The column "Evidence" will be displayed only if there is enough space.
 
 
 ## Install
