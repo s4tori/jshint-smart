@@ -1,6 +1,6 @@
 {
 	"name": "jshint-smart",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"description": "Responsive reporter for JSHint",
 	"author": "Romain N.",
 	"homepage": "https://github.com/s4tori/jshint-smart",
